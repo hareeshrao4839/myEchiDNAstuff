@@ -1,5 +1,8 @@
 Day to Day Kubernetes Operations: https://blog.openshift.com/podcast-podctl-16-day-to-day-operations/
 
+Security: Hosts, Registries, Content and Pipelines:  https://blog.openshift.com/podcast-podctl-14-security-hosts-registries-content-pipelines/
+
+How Full is My Cluster – Part 2: Protecting the Nodes: https://blog.openshift.com/category/products/openshift-container-platform/
 
 
 Topic 1 - How do you deploy the underlying compute resources that are used as Nodes in a Kubernetes cluster?
