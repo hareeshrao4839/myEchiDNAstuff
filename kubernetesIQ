@@ -1,5 +1,10 @@
 Topic 1 - How do you deploy the underlying compute resources that are used as Nodes in a Kubernetes cluster?
+
 Topic 2 - If a Kubernetes environment has to scale, how do you grow out the computing (or other) resources?
+
 Topic 3 - When a new version of Kubernetes comes out, how do you manage to upgrade the environment?
-Topic 4 - What are the common things that the Ops team is tracking, monitoring, measuring in a Kubernetes environment? 
-Topic 5 - What are some things that have changed, from an operational perspective, because a Container/Kubernetes environment and previous technologies (e.g. VMs)?
+
+Topic 4 - What are the common things that the Ops team is tracking, monitoring, measuring in a Kubernetes environment?
+
+Topic 5 - What are some things that have changed, from an operational perspective, because a Container/Kubernetes environment
+and previous technologies (e.g. VMs)?
