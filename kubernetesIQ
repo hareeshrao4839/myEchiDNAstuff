@@ -1,3 +1,7 @@
+Day to Day Kubernetes Operations: https://blog.openshift.com/podcast-podctl-16-day-to-day-operations/
+
+
+
 Topic 1 - How do you deploy the underlying compute resources that are used as Nodes in a Kubernetes cluster?
 
 Topic 2 - If a Kubernetes environment has to scale, how do you grow out the computing (or other) resources?
@@ -8,3 +12,5 @@ Topic 4 - What are the common things that the Ops team is tracking, monitoring, 
 
 Topic 5 - What are some things that have changed, from an operational perspective, because a Container/Kubernetes environment
 and previous technologies (e.g. VMs)?
+
+
