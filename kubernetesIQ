@@ -3,3 +3,12 @@ Topic 2 - If a Kubernetes environment has to scale, how do you grow out the comp
 Topic 3 - When a new version of Kubernetes comes out, how do you manage to upgrade the environment?
 Topic 4 - What are the common things that the Ops team is tracking, monitoring, measuring in a Kubernetes environment? 
 Topic 5 - What are some things that have changed, from an operational perspective, because a Container/Kubernetes environment and previous technologies (e.g. VMs)?
+
+
+
+Day to Day Kubernetes Operations: https://blog.openshift.com/podcast-podctl-16-day-to-day-operations/
+
+Security: Hosts, Registries, Content and Pipelines:  https://blog.openshift.com/podcast-podctl-14-security-hosts-registries-content-pipelines/
+
+How Full is My Cluster – Part 2: Protecting the Nodes: https://blog.openshift.com/category/products/openshift-container-platform/
+
