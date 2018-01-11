@@ -1,0 +1,44 @@
+[OSEv3:children]
+nodes
+masters
+nfs
+etcd
+lb
+[OSEv3:vars]
+openshift_master_default_subdomain=ocp.harrystuff.tech
+ansible_ssh_user=harryritz4839
+ansible_become=yes
+openshift_release=3.6
+openshift_override_hostname_check=true
+openshift_master_cluster_method=native
+openshift_master_cluster_hostname=lb-1.10.10.0.10.xip.io
+openshift_master_cluster_public_hostname=lb-1.10.10.0.10.xip.io
+#deployment_type=openshift-enterprise
+deployment_type=origin
+openshift_disable_check=memory_availability,disk_availability,docker_storage
+openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider', 'filename': '/etc/origin/master/htpasswd'}]
+#openshift_master_htpasswd_users={'admin': '7676aaafb027c825bd9abab78b234070e702752f625b752e55e55b48e607e358', 'nithu': 'nithu@123'}
+openshift_clock_enabled=true
+openshift_docker_insecure_registries=172.30.0.0/16
+
+[nodes]
+master-1.10.10.0.3.xip.io  openshift_public_ip=10.10.0.3 openshift_ip=10.10.0.3   openshift_schedulable=False
+master-2.10.10.0.4.xip.io  openshift_public_ip=10.10.0.4 openshift_ip=10.10.0.4   openshift_schedulable=False
+master-3.10.10.0.5.xip.io  openshift_public_ip=10.10.0.5 openshift_ip=10.10.0.5   openshift_schedulable=False
+node-1.10.10.0.6.xip.io    openshift_public_ip=10.10.0.6 openshift_ip=10.10.0.6   openshift_schedulable=True
+node-2.10.10.0.7.xip.io    openshift_public_ip=10.10.0.7 openshift_ip=10.10.0.7  openshift_node_labels="{'region': 'infra'}" openshift_schedulable=True
+
+[masters]
+master-1.10.10.0.3.xip.io  openshift_public_ip=10.10.0.3 openshift_ip=10.10.0.3
+master-2.10.10.0.4.xip.io  openshift_public_ip=10.10.0.4 openshift_ip=10.10.0.4
+master-3.10.10.0.5.xip.io  openshift_public_ip=10.10.0.5 openshift_ip=10.10.0.5
+
+[nfs]
+nfs-1.10.10.0.9.xip.io     openshift_public_ip=10.10.0.9 openshift_ip=10.10.0.9
+
+[etcd]
+master-1.10.10.0.3.xip.io  openshift_public_ip=10.10.0.3 openshift_ip=10.10.0.3
+master-2.10.10.0.4.xip.io  openshift_public_ip=10.10.0.4 openshift_ip=10.10.0.4
+master-3.10.10.0.5.xip.io  openshift_public_ip=10.10.0.5 openshift_ip=10.10.0.5
+[lb]
+lb-1.10.10.0.10.xip.io     openshift_public_ip=10.10.0.10 openshift_ip=10.10.0.10 openshift_node_labels="{'region': 'infra'}"
