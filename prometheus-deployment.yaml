@@ -51,11 +51,7 @@ spec:
           mountPath: /etc/prometheus
         - name: rules-volume
           mountPath: /etc/prometheus-rules
-        - name: etcd-tls-client-certs
-          mountPath: /etc/etcd/ssl
           readOnly: true
-        - name: prometheus-data
-          mountPath: /prometheus
       volumes:
       - name: config-volume
         configMap:
